@@ -1,1 +1,6 @@
-<?php echo "I am the about page"?>
+<?php
+
+/*  Template Name: About Page */
+
+?>
+

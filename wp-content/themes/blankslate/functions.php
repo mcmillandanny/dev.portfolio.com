@@ -65,3 +65,9 @@ return count( $comments_by_type['comment'] );
 return $count;
 }
 }
+?>
+
+<?php require get_template_directory() . '/functions/taxonomies.php';?>
+<?php require get_template_directory() . '/functions/enqueues.php';?>
+
+<?php add_filter('show_admin_bar', '__return_false');?>

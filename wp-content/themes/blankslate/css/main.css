@@ -2,14 +2,12 @@ body {
   background: white; }
 
 #hero-image {
-  width: 100%; }
+  width: 100%;
+  z-index: -1; }
 
 #hero-image:hover {
   -webkit-filter: grayscale(90%);
           filter: grayscale(90%); }
-
-#header {
-  background: red; }
 
 .menu ul {
   display: -webkit-box;
@@ -22,7 +20,14 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 10px; }
+  padding: 10px 0 0 10px;
+  margin-bottom: -50px; }
+  .menu ul li {
+    padding: 10px;
+    margin-right: 40px;
+    z-index: 10; }
+  .menu ul a {
+    text-decoration: none; }
 
 #footer {
   background: blue; }

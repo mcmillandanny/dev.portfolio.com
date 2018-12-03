@@ -10,6 +10,7 @@
             <h2 class="home-blurb-2">AN ASPIRING WEB DEVELOPER</h2>
                 <div class="arrow"></div>
             <p class="home-scroll-down">Scroll Down</p>
+            <a href=" http://localhost:8888/view-work/">View Work</a>
         </div>
     </div>
     

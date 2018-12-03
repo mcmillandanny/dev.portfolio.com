@@ -2,6 +2,22 @@ body {
   background: #f8f4f4;
   font-family: 'Exo', sans-serif; }
 
+.menu ul {
+  text-align: center;
+  padding: 20px 0 0 20px;
+  background: white; }
+  .menu ul li {
+    padding: 40px;
+    margin: 10px;
+    display: inline; }
+  .menu ul a {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: black; }
+  .menu ul a:hover {
+    color: red; }
+
 .hero-container {
   position: absolute;
   text-align: center;
@@ -95,32 +111,12 @@ body {
     font-weight: 900;
     z-index: 1; }
 
-.menu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 10px 0 0 10px;
-  margin-bottom: -80px; }
-  .menu ul li {
-    padding: 20px;
-    margin-right: 40px;
-    z-index: 10; }
-  .menu ul a {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    margin-top: 200px; }
-  .menu ul a:hover {
-    color: red; }
+.portfolio-header {
+  text-align: center;
+  padding: 20px;
+  font-size: 2em; }
 
-#footer {
-  background: blue; }
+#portfolio-container {
+  width: 1024px;
+  margin: auto;
+  border: 1px solid red; }

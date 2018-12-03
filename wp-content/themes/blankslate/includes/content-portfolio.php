@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
          $args = array(
             "post_type" => "portfolio",
             "category_name" => get_field('portfolio_display_category'),
@@ -9,4 +9,12 @@
        
     <a href="<?php the_permalink() ?>"><?php the_title()?></a>
 
- <?php endwhile; wp_reset_postdata(); endif; ?>
+ <?php endwhile; wp_reset_postdata(); endif; ?> -->
+ <h1 class="portfolio-header">Portfolio</h1>
+ <section id="portfolio-container">
+        <div class="col-container">
+            <div class="col-1"></div>
+            <div class="col-2"></div>
+            <div class="col-3"></div>
+        <div>
+ </section>

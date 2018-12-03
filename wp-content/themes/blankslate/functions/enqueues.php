@@ -2,7 +2,7 @@
 
 function portfolio_enqueues() {
     
-        //Custom theme CSS
+     //Custom theme CSS
     wp_register_style('portfolio-css', get_template_directory_uri() . '/css/main.css', false, null);
     wp_enqueue_style('portfolio-css');
 
@@ -10,6 +10,9 @@ function portfolio_enqueues() {
     wp_register_script('gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js', false, '1.20.3', true);
     wp_enqueue_script('gsap-js');
     
+    // JavaScript
+    wp_enqueue_script( 'myscript', get_template_directory_uri() . '/js/main.js');
+
 }
 
 

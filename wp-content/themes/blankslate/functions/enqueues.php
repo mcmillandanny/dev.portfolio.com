@@ -11,7 +11,7 @@ function portfolio_enqueues() {
     wp_enqueue_script('gsap-js');
     
     // JavaScript
-    wp_enqueue_script( 'myscript', get_template_directory_uri() . '/js/main.js');
+    wp_enqueue_script( 'myscript', get_template_directory_uri() . '/js/main.js', array(), false,  true);
 
 }
 

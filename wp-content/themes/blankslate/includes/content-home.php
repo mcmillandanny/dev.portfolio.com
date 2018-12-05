@@ -3,6 +3,7 @@
     <div class="home-container">
         <div class="hero-container">
         <img id="hero-image-top" src="<?php echo get_template_directory_uri()?>/images/hero-filler.jpg" alt="hero-image" />
+        <img id="logo-arrow-image" src="<?php echo get_template_directory_uri()?>/images/logo-arrow.png" alt="hero-image" />
             <h1 class="home-blurb">Hello, I'm Daniel</h1>
                     <div class="home-blurb-box"></div>
             <h2 class="home-blurb-2">AN ASPIRING WEB DEVELOPER</h2>

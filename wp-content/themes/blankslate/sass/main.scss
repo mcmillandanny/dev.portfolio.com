@@ -12,7 +12,13 @@ $desktop-break: 1200px;
 
 //////////////////////// HEADER ///////////////////////////
 @media (min-width: $mobile-break) {
+
+    header {
+        z-index: 10;
+    }
+
     #hamburger {
+        z-index: 1;
         display: inline-block;
         padding: 10px 10px 0px 10px;
         cursor: pointer;
@@ -40,17 +46,17 @@ $desktop-break: 1200px;
     }
 
 ///////////////////////////////////////////////////////// NAV MENU
-
     .menu-menu-1-container {
         display: none;
     }
 
-    .menu-menu-1-container ul {
-        padding: 0px 0px 20px 0px;
-    }
     .menu-menu-1-container a {
         text-decoration: none;
-        padding: 10px;
+       
+    }
+
+    #menu-item-78, #menu-item-79 {
+        margin-right: 10px;
     }
 
     .menu-menu-1-container li {
@@ -64,17 +70,46 @@ $desktop-break: 1200px;
 
         #hero-image-top {
             width: 100%;
+
         }
         
 
         .home-blurb {
             position: absolute;
-            font-size: 1em;
+            font-size: 1.2em;
             z-index: 1;
             top: 17%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: blue;
+            color: white;
+        }
+
+        .home-blurb-box {
+            border-radius: 1px;
+            width: 160px;
+            height: 55px;
+            z-index: 0;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: black;
+            opacity: .3;
+            padding: 3px;
+        }
+
+        .home-blurb-2 {
+            font-size: .7em;
+            z-index: 1;
+            position: absolute;
+            top: 27%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: orange;
+        }
+
+        .home-scroll-down {
+            display: none;
         }
     }
 }
@@ -86,31 +121,32 @@ $desktop-break: 1200px;
 
 
 
-.menu {
-        ul{
-        text-align: center;
-        padding: 20px 0 0 20px;
-        background: white;
-        
-        li {
-            padding: 40px;
-            margin: 10px;
-            display: inline;
-        }
 
-        a {
-            font-size: 1.5em;
-            font-weight: bold;
-            text-decoration: none;
-            color: black;
-        }
-
-        a:hover {
-            color: red;
+// .menu {
+//         ul{
+//         text-align: center;
+//         padding: 20px 0 0 20px;
+//         background: white;
         
-        }
-    } 
-}
+//         li {
+//             padding: 40px;
+//             margin: 10px;
+//             display: inline;
+//         }
+
+//         a {
+//             font-size: 1.5em;
+//             font-weight: bold;
+//             text-decoration: none;
+//             color: black;
+//         }
+
+//         a:hover {
+//             color: red;
+        
+//         }
+//     } 
+// }
 
 ////////////////////////////////CONTENT HOME////////////////////////////////
 // .hero-container {
@@ -123,8 +159,6 @@ $desktop-break: 1200px;
 //         position: relative;
 //         left: 0%;
 //         top: 0%;
-        
-        
 //     }
 
 //     #hero-image-top:hover {

@@ -3,7 +3,10 @@ body {
   font-family: 'Exo', sans-serif; }
 
 @media (min-width: 320px) {
+  header {
+    z-index: 10; }
   #hamburger {
+    z-index: 1;
     display: inline-block;
     padding: 10px 10px 0px 10px;
     cursor: pointer; }
@@ -24,11 +27,10 @@ body {
               transform: rotate(45deg) translate(-8px, -8px); }
   .menu-menu-1-container {
     display: none; }
-  .menu-menu-1-container ul {
-    padding: 0px 0px 20px 0px; }
   .menu-menu-1-container a {
-    text-decoration: none;
-    padding: 10px; }
+    text-decoration: none; }
+  #menu-item-78, #menu-item-79 {
+    margin-right: 10px; }
   .menu-menu-1-container li {
     float: left; }
   .hero-container {
@@ -37,29 +39,37 @@ body {
       width: 100%; }
     .hero-container .home-blurb {
       position: absolute;
-      font-size: 1em;
+      font-size: 1.2em;
       z-index: 1;
       top: 17%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
-      color: blue; } }
-
-.menu ul {
-  text-align: center;
-  padding: 20px 0 0 20px;
-  background: white; }
-  .menu ul li {
-    padding: 40px;
-    margin: 10px;
-    display: inline; }
-  .menu ul a {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-decoration: none;
-    color: black; }
-  .menu ul a:hover {
-    color: red; }
+      color: white; }
+    .hero-container .home-blurb-box {
+      border-radius: 1px;
+      width: 160px;
+      height: 55px;
+      z-index: 0;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      background: black;
+      opacity: .3;
+      padding: 3px; }
+    .hero-container .home-blurb-2 {
+      font-size: .7em;
+      z-index: 1;
+      position: absolute;
+      top: 27%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      color: orange; }
+    .hero-container .home-scroll-down {
+      display: none; } }
 
 .portfolio-header {
   text-align: center;

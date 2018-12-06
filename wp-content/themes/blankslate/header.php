@@ -12,12 +12,12 @@
 <div id="wrapper" class="hfeed">
     <header id="header" role="banner">
         <nav id="menu" role="navigation"> 
+        <img id="logo" src="<?php echo get_template_directory_uri()?>/images/logo.png" alt="logo" />
             <div id="hamburger">
                 <div class="line-1 hamburger-lines"></div>
                 <div class="line-2 hamburger-lines"></div>
                 <div class="line-3 hamburger-lines"></div>
                 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-
             </div>
         </nav>
     </header>

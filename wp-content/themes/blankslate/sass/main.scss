@@ -5,6 +5,8 @@ body {
 
 
 ///////////////VARIABLES////////////////////
+$accentOrange: #e36d32;
+
 
 $mobile-break: 320px;
 $tablet-break: 768px;
@@ -15,6 +17,29 @@ $desktop-break: 1200px;
 
     header {
         z-index: 10;
+    }
+
+    #logo {
+        z-index: 10;
+        float: right;
+        padding: 5px;
+        animation: logo-ani 2s 1 cubic-bezier(0.78, 0.01, 0, 0.96);
+       
+    }
+
+    @keyframes logo-ani {
+        0% {
+            transform: translateY(-90px);
+            
+        }
+
+        50% {
+            transform: translateY(9px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
     }
 
     #hamburger {
@@ -47,9 +72,8 @@ $desktop-break: 1200px;
 
 ///////////////////////////////////////////////////////// NAV MENU
     .menu-menu-1-container {
-        display: none;
+       display: none;
     }
-
     .menu-menu-1-container a {
         text-decoration: none;
        
@@ -65,52 +89,69 @@ $desktop-break: 1200px;
 
 ///////////////////////////////////////////////////////// END OF NAV
 
-        .hero-container {
-            position: relative;
+    .hero-container {
+
+    .hero-img-container {
+        width: 100vw;
+        position: relative;
+        
+        img {
+            width:100%;
+        }
+
+        .home-blurb-box {
+            border-radius: 1px;
+            width: 100vw;
+            height: 100%;
+            z-index: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color:rgba(0,0,0,0.3);
+        }
+    }
+       
+           
 
         #hero-image-top {
             width: 100%;
-
         }
         
 
         .home-blurb {
+            white-space: nowrap;
             position: absolute;
-            font-size: 1.2em;
+            font-size: 2em;
             z-index: 1;
-            top: 17%;
+            top: 30%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: white;
         }
 
-        .home-blurb-box {
-            border-radius: 1px;
-            width: 160px;
-            height: 55px;
-            z-index: 0;
-            position: absolute;
-            top: 20%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: black;
-            opacity: .3;
-            padding: 3px;
-        }
+        
 
         .home-blurb-2 {
-            font-size: .7em;
+            white-space: nowrap;
+            font-size: .8em;
             z-index: 1;
             position: absolute;
-            top: 27%;
+            top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: orange;
+            color: $accentOrange;
         }
 
         .home-scroll-down {
             display: none;
         }
+    }
+
+    #logo-arrow-image {
+        position: absolute;
+        width: 100%;
+        z-index: -10;
+        margin-top: -10px;
     }
 }
 
@@ -242,13 +283,13 @@ $desktop-break: 1200px;
 
 /////////////////////////////////////PORTFOLIO CONTENT//////////////////////////////////////
 
-.portfolio-header {
-    text-align: center;
-    padding: 20px;
-    font-size: 2em;
-}
-#portfolio-container  {
-    width: 1024px;  
-    margin: auto;
-    border: 1px solid red;
-}
+// .portfolio-header {
+//     text-align: center;
+//     padding: 20px;
+//     font-size: 2em;
+// }
+// #portfolio-container  {
+//     width: 1024px;  
+//     margin: auto;
+//     border: 1px solid red;
+// }

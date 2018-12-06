@@ -51,8 +51,13 @@ body {
     #hamburger .change.line-3 {
       -webkit-transform: rotate(45deg) translate(-8px, -8px);
               transform: rotate(45deg) translate(-8px, -8px); }
+    #hamburger #hamburger.menu-ani {
+      -webkit-transition: .7;
+      transition: .7;
+      background-color: red; }
   .menu-menu-1-container {
-    display: none; }
+    display: none;
+    margin-bottom: -10px; }
   .menu-menu-1-container a {
     text-decoration: none; }
   #menu-item-78, #menu-item-79 {

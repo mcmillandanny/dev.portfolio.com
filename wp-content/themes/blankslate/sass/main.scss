@@ -68,12 +68,20 @@ $desktop-break: 1200px;
             transform: rotate(45deg) translate(-8px, -8px) ;
         }
 
+        #hamburger.menu-ani {
+            transition: .7;
+            background-color: red;
+        }
+
     }
 
 ///////////////////////////////////////////////////////// NAV MENU
     .menu-menu-1-container {
        display: none;
+       margin-bottom: -10px;
     }
+
+   
     .menu-menu-1-container a {
         text-decoration: none;
        

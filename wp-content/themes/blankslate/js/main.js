@@ -6,18 +6,18 @@ var tl = new TimelineMax();
 
 const hamburger = document.getElementById('hamburger');
 const lines = document.querySelectorAll('.hamburger-lines');
+const navOpen = document.querySelector('.menu-menu-1-container')
 
 
 
 
 function hamburgerToggle() {
     lines.forEach(function(line) {
-        console.log(line);
-        line.classList.toggle("change");
+        line.classList.toggle("change");       
     });
-
-    const navOpen = document.querySelector('.menu-menu-1-container')
-        navOpen.style.display = navOpen.style.display === 'block' ? '' : 'block';
+    
+    navOpen.style.display = navOpen.style.display === 'block' ? '' : 'block'; 
+    navOpen.classList.add("menu-ani")
 };
    
 

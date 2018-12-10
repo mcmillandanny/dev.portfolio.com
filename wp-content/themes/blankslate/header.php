@@ -17,7 +17,17 @@
                 <div class="line-1 hamburger-lines"></div>
                 <div class="line-2 hamburger-lines"></div>
                 <div class="line-3 hamburger-lines"></div>
-                <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+                <!-- <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?> -->
+                <div class="site-nav">
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Top</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#about-me">About Me</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </nav>
     </header>

@@ -9,7 +9,7 @@
        
     <a href="<?php the_permalink() ?>"><?php the_title()?></a>
 
- <?php endwhile; wp_reset_postdata(); endif; ?> -->
+ <?php endwhile; wp_reset_postdata(); endif; ?> --> -->
  <h1 class="portfolio-header">Portfolio</h1>
  <section id="portfolio-container">
         <div class="col-container">

@@ -1,15 +1,11 @@
 console.log('Hello from the console');
 
 
-// console.log(TweenMax);
 var tl = new TimelineMax();
 
 const hamburger = document.getElementById('hamburger');
 const lines = document.querySelectorAll('.hamburger-lines');
-const navOpen = document.querySelector('.menu-menu-1-container')
-
-
-
+const navOpen = document.querySelector('.site-nav')
 
 function hamburgerToggle() {
     lines.forEach(function(line) {
@@ -19,6 +15,5 @@ function hamburgerToggle() {
     navOpen.style.display = navOpen.style.display === 'block' ? '' : 'block'; 
     navOpen.classList.add("menu-ani")
 };
-   
 
 hamburger.addEventListener("click", hamburgerToggle);
